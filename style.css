@@ -1,0 +1,111 @@
+
+:root {
+  --bg: #fff;
+  --text: #222;
+  --accent: #0077ff;
+}
+
+body.dark {
+  --bg: #111;
+  --text: #eee;
+  --accent: #4db8ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: var(--accent);
+  color: white;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 4em 2em;
+  text-align: center;
+  background: linear-gradient(to right, #0077ff, #00bfff);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  background: white;
+  color: #0077ff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 3em 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.features-grid, .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1em;
+}
+
+.card, .product-card {
+  background: #f0f0f0;
+  padding: 1.5em;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover, .product-card:hover {
+  transform: translateY(-5px);
+  background: #e0e0e0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form input, form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.8em;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  color: white;
+}
